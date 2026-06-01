@@ -1,0 +1,22 @@
+services:
+  fastmcp-server:
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    image: fastmcp-server:latest
+    restart: always
+    env_file: .env
+    ports:
+      - "8000:8000"
+ 
+  fastmcp-db:
+    image: pgvector/pgvector
+    hostname: fastmcp_db
+    env_file: .env
+    volumes:
+      - fastmcp_data:/var/lib/postgresql/data
+    restart: always
+ 
+volumes:
+  fastmcp_db_data:
+    name: fastmcp-data
