@@ -1,9 +1,9 @@
 from fastmcp import FastMCP 
 
-# from src.mcp.tools.ex_tools import tools as ex_tools
+from src.tools.maths_tools import tools as maths_tools
 
 tools = FastMCP("tools")
 
-# tools.mount(ex_tools)
+tools.mount(maths_tools)
 
 __all__ = ["tools"]

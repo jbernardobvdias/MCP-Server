@@ -3,10 +3,10 @@ from src.settings import settings
 from fastmcp import FastMCP
 from loguru import logger
 
-from src.mcp.endpoints.endpoints import endpoints
-from src.mcp.prompts.prompts import prompts
-from src.mcp.resources.resources import resources
-from src.mcp.tools.tools import tools
+from src.endpoints.endpoints import endpoints
+from src.prompts.prompts import prompts
+from src.resources.resources import resources
+from src.tools.tools import tools
 
 def main():
     mcp = FastMCP(

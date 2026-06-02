@@ -1,6 +1,6 @@
 from fastmcp import FastMCP 
 
-from src.mcp.endpoints.base_endpoints import endpoints as base_endpoints
+from src.endpoints.base_endpoints import endpoints as base_endpoints
 
 endpoints = FastMCP("endpoints")
 
