@@ -1,6 +1,6 @@
 from fastmcp import FastMCP 
 
-from src.prompts.maths_prompts import prompts as maths_prompts
+from prompts.maths_prompts import prompts as maths_prompts
 
 prompts = FastMCP("prompts")
 

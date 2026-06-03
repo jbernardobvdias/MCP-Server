@@ -1,6 +1,6 @@
 from fastmcp import FastMCP 
 
-from src.tools.maths_tools import tools as maths_tools
+from tools.maths_tools import tools as maths_tools
 
 tools = FastMCP("tools")
 

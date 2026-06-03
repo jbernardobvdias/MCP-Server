@@ -52,5 +52,5 @@ curl http://localhost:8000/health
  
 ```bash
 pip install -r requirements.txt
-python main.py
+python src/main.py
 ```
